@@ -42,3 +42,28 @@ object Hello {
     return (side * side)
   }
 }
+
+/* Explanation: 
+*The code begins by defining an object named Hello. In Scala, object is used to create a singleton object, which means there will only be one instance of this object created.
+
+* " def main(args: Array[String]) = { "
+This is the entry point of the program. The main method is where the execution of the program begins. It takes an array of strings args as input, which represents any command-line arguments passed to the program.
+
+* hello world line etc :
+These lines print a welcome message and a menu of options for the user to choose from. It prompts the user to enter a number corresponding to the desired operation.
+
+* " var choice = scala.io.StdIn.readLine().toInt " 
+if else statements : 
+Here, the program reads the user's input, converts it to an integer, and then checks the value of choice. Depending on the value entered by the user, it calls one of three functions: add(), even_odd(), or calculates the area of a square. If the input doesn't match any of these options, it prints a message asking the user to enter a valid input.
+
+* " def add() " 
+This function prompts the user to enter two numbers, reads those numbers, calculates their sum, and then prints the result.
+
+* " def even_odd() " 
+This function prompts the user to enter a number, reads the number, checks if it's even or odd, and then prints the result.
+
+* "def area_of_square(side: Float):"
+This function takes the length of a side of a square as input, calculates the area of the square, and returns the result.
+
+*/
+
